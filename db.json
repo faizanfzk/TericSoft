@@ -1,5 +1,5 @@
 {
-  "item": [
+  "task": [
     {
       "name": "Faizan",
       "email": "rifakatchacha@gmail.com",
@@ -8,6 +8,15 @@
       "gender": "male",
       "hobbies": "DebugCode",
       "id": 6
+    },
+    {
+      "name": "Amir",
+      "email": "qwerty@gmail.com",
+      "phone": "08299651725",
+      "dob": "2022-09-08",
+      "gender": "male",
+      "hobbies": "Swimming",
+      "id": 7
     }
   ]
 }
