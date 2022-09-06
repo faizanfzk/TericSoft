@@ -35,7 +35,7 @@ export const Add=()=> {
     e.preventDefault();
     axios.post("http://localhost:8080/item", formData).then(() => {
       alert("Entry added succussfully");
-      console.log("ads", formData.hobbies);
+    
       setFormData({
         name: "",
         email: "",
@@ -49,6 +49,19 @@ export const Add=()=> {
   useEffect(() => {
     getData();
   }, [formData]);
+
+
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    bgcolor: "background.paper",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+  };
 
   return (
     <div>
@@ -98,7 +111,7 @@ export const Add=()=> {
               <label>DOB</label>
               <TextField
                 id="filled-basic"
-                // label="dob"
+               
                 variant="filled"
                 type="date"
                 name="dob"
@@ -107,7 +120,7 @@ export const Add=()=> {
               />
             </Typography>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              <label>Gender</label>
+              <label>Gender : </label>
               <label htmlFor="">Male</label>
               <TextField
                 id="filled-basic"
@@ -116,7 +129,7 @@ export const Add=()=> {
                 type="radio"
                 name="gender"
                 value="male"
-                // value={formData.gender}
+               
                 checked={formData.gender === "male"}
                 onChange={handleChange}
               />
@@ -128,14 +141,14 @@ export const Add=()=> {
                 type="radio"
                 name="gender"
                 value="female"
-                // value={formData.gender}
+                
                 onChange={handleChange}
                 checked={formData.gender === "female"}
               />
             </Typography>
 
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              <label>Hobbies</label>
+              <label>Hobbies : </label>
               <label htmlFor="">DebugCode</label>
               <TextField
                 id="filled-basic"
@@ -144,20 +157,20 @@ export const Add=()=> {
                 type="checkbox"
                 name="hobbies"
                 value="DebugCode"
-                // value={formData.hobbies}
+                
                 checked={formData.gender === "DebugCode"}
                 onChange={handleChange}
               />
-              <label htmlFor="">kungfu</label>
+              <label htmlFor="">Cricket</label>
               <TextField
                 id="filled-basic"
                 label="Name"
                 variant="filled"
                 type="checkbox"
                 name="hobbies"
-                value="kungfu"
-                // value={formData.hobbies}
-                checked={formData.gender === "kungfu"}
+                value="Cricket"
+                
+                checked={formData.gender === "Cricket"}
                 onChange={handleChange}
               />
               <label htmlFor="">Swimming</label>
@@ -168,7 +181,7 @@ export const Add=()=> {
                 type="checkbox"
                 name="hobbies"
                 value="Swimming"
-                // value={formData.hobbies}
+                
                 checked={formData.gender === "Swimming"}
                 onChange={handleChange}
               />
@@ -181,14 +194,3 @@ export const Add=()=> {
   );
 }
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
