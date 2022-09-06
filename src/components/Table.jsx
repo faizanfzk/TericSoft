@@ -51,6 +51,10 @@ export const Tabla = () => {
               <TableCell>Name</TableCell>
               <TableCell align="center">Email</TableCell>
               <TableCell align="center">Contact</TableCell>
+              <TableCell align="center">DOB</TableCell>
+              <TableCell align="center">Gender</TableCell>
+              <TableCell align="center">Hobbies</TableCell>
+           
               <TableCell align="center">Delete</TableCell>
               <TableCell align="center">Edit</TableCell>
             </TableRow>
@@ -66,6 +70,10 @@ export const Tabla = () => {
                 </TableCell>
                 <TableCell align="center">{row.email}</TableCell>
                 <TableCell align="center">{row.phone}</TableCell>
+                <TableCell align="center">{row.dob}</TableCell>
+                <TableCell align="center">{row.gender}</TableCell>
+                
+                <TableCell align="center">{row.hobbies}</TableCell>
                 <TableCell align="center" ><IconButton onClick={() => del(row.id)} aria-label="delete">
                   <DeleteIcon />
                 </IconButton></TableCell>

@@ -1,16 +1,13 @@
 {
   "item": [
     {
-      "name": "Faizan Khan",
-      "email": "khanfaizan2505@gmail.com",
-      "phone": "08299651725",
-      "id": 4
-    },
-    {
       "name": "Faizan",
-      "email": "Khanfaizan2505@gmail.com",
+      "email": "rifakatchacha@gmail.com",
       "phone": "08299651725",
-      "id": 5
+      "dob": "2022-09-29",
+      "gender": "male",
+      "hobbies": "DebugCode",
+      "id": 6
     }
   ]
 }
