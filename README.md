@@ -1,6 +1,6 @@
 <h1> TericSoft </h1>
 
-<p>Important Note : To Run the application use - npm run dev and to start the server use - npx json-server --port 8080</p>
+<p>Important Note : To Run the application use - npm run dev</p>
 
 <h3> A Simple Application used to add data in the form of table , where an user can Add , Delete ,Update their Information </h3>
 
