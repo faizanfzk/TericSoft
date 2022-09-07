@@ -10,7 +10,7 @@ export const Add=()=> {
 
   const getData = () => {
     axios
-      .get("http://localhost:8080/item")
+      .get(" https://tericsoft-assignment.herokuapp.com/task")
       .then((res) => setData(res.data))
       .then((err) => console.log(err));
   };
@@ -33,7 +33,7 @@ export const Add=()=> {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8080/item", formData).then(() => {
+    axios.post("https://tericsoft-assignment.herokuapp.com/task", formData).then(() => {
       alert("Entry added succussfully");
     
       setFormData({
@@ -73,6 +73,7 @@ export const Add=()=> {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+          <h1>Enter Your Details</h1>
           <form onSubmit={handleSubmit}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
               <label>Name</label>

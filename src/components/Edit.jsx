@@ -40,7 +40,7 @@ const handleChange=(e)=>{
 const handleSubmit=(e)=>{
 e.preventDefault();
 
-axios.put(`http://localhost:8080/item/${prop}`,{...formData})
+axios.put(`https://tericsoft-assignment.herokuapp.com/task/${prop}`,{...formData})
 .then(()=>alert("Data updated Successfully"))
 setFormData({
     name:"",
@@ -63,6 +63,7 @@ return (
     aria-describedby="modal-modal-description"
   >
     <Box sx={style}>
+      <h1>Edit Your Details</h1>
       <form onSubmit={handleSubmit}>
         <Typography id="modal-modal-title" variant="h6" component="h2">
           <label>Name</label>

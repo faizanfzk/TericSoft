@@ -22,13 +22,13 @@ export const Tabla = () => {
   }, []);
 
   const getData = () => {
-    axios.get("http://localhost:8080/item")
+    axios.get(" https://tericsoft-assignment.herokuapp.com/task")
       .then((res) => setItem(res.data))
       .catch((err) => console.log(err.message))
   }
   var newList;
   const del = (i) => {
-    axios.delete(`http://localhost:8080/item/${i}`)
+    axios.delete(`https://tericsoft-assignment.herokuapp.com/task/${i}`)
       .then(() => {
 
         newList = item.filter((id) => {
